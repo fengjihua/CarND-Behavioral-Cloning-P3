@@ -53,10 +53,6 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
-
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
-
 This is my model architecture:
 1. First of all, crop image layer to crop the region car didn't insterest in, it could also reduce the calculation.
 2. Image data normalized to range [-0.5, 0.5] in the model using a Keras lambda layer.
